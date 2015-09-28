@@ -29,7 +29,11 @@ e.g: styles => @import "../../shared/dynamic-modal/modal";
 - modal-tpl="{template name}" (required): Template name. It has to be existing in the template folder inside the modal module. 
 - modal-theme="[white|black]" (optional): Can be white or black. If not provided, default theme is white (white background, dark gray text).
 
-Complete example of the button: <button trigger-modal modal-tpl="example.tpl.html" ng-click title="Modal Title" modal-theme>Open Modal</button>
+Complete example of the button: 
+
+```
+<button trigger-modal modal-tpl="example.tpl.html" ng-click title="Modal Title" modal-theme>Open Modal</button>
+```
 
 
 
