@@ -20,14 +20,28 @@ Modal Module
 Copy the whole folder into your preferred location inside your project
 e.g: inside app/shared folder
 
-#### 2. Wire up the modal files
-Wire up the core files and make sure they are correctly included: directive (modal.drv.js) and style (_modal.scss).
-e.g: styles => @import "../../shared/dynamic-modal/modal";
+#### 2. Inject it into your main module
+Inject "dynamic-modal" into your main module.
+e.g:
 
-#### 3. Add templates (or use the example one included)
+```javascript
+angular.module('MainApp', [
+  'dynamic-modal'
+])
+```
+
+#### 3. Wire up the modal files
+Wire up the core files and make sure they are correctly included into your index file:
+
+* The Module (modal.mdl.js)
+
+* The Style (_modal.scss)
+
+
+#### 4. Add templates (or use the example one included)
 Add your templates into the 'templates' folder included which is included in the 'dynamic-modal' folder.
 
-#### 4. Add the modal trigger
+#### 5. Add the modal trigger
 Add a button or any element in which you will have to add the following attributes:
  
 - trigger-modal (required): boolean attribute, not needed to assign any value.

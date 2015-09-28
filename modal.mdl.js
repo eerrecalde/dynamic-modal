@@ -103,7 +103,7 @@
   ModalDirective.$inject = ['show', '$timeout', 'TplPath'];
   
 
-  angular.module('modals',[])
+  angular.module('dynamic-modal',[])
     .constant('TplPath', 'shared/dynamic-modal/templates/')
     .directive('dynamicModal', ModalDirective)
     .directive('triggerModal', ModalTrigger)
