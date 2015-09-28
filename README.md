@@ -16,16 +16,16 @@ Modal Module
 
 ## How to implement it first time:
 
-### 1. Copy the whole folder into your preferred location inside your project
+1. Copy the whole folder into your preferred location inside your project
 e.g: inside app/shared folder
 
-### 2. Wire up the core files and make sure they are correctly included: directive (modal.drv.js) and style (_modal.scss).
+2. Wire up the core files and make sure they are correctly included: directive (modal.drv.js) and style (_modal.scss).
 e.g: styles => @import "../../shared/dynamic-modal/modal";
 
-### 3. Add your templates into the 'templates' folder included which is included in the 'dynamic-modal' folder.
+3. Add your templates into the 'templates' folder included which is included in the 'dynamic-modal' folder.
 
-### 4. Add a button or any element in which you will have to add the following attributes: 
-- trigger-modal (required): boolean attribute, not needed to assign any value.
+4. Add a button or any element in which you will have to add the following attributes: 
+* trigger-modal (required): boolean attribute, not needed to assign any value.
 - modal-tpl="{template name}" (required): Template name. It has to be existing in the template folder inside the modal module. 
 - modal-theme="[white|black]" (optional): Can be white or black. If not provided, default theme is white (white background, dark gray text).
 
